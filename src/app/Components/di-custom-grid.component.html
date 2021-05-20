@@ -1,0 +1,21 @@
+<kendo-grid
+  #diCustomGrid
+  [data]="gridView" 
+  [loading]="loading" 
+  [pageSize]="pageSize" 
+  [skip]="skip" 
+  [sortable]="{
+    allowUnsort: true,
+    mode: multiple ? 'multiple' : 'single'
+    }"
+  [sort]="sort"
+  (sortChange)="sortChange($event)"
+  filterable="menu" 
+  [groupable]="groupable" 
+  [pageable]="pageable" 
+  (pageChange)="pageChange($event)"
+  class="di-custom-grid">
+  <ng-content></ng-content>
+</kendo-grid>
+
+  <!-- (dataStateChange)="onDataStateChange($event)" -->

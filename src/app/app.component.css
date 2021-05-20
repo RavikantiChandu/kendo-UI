@@ -1,0 +1,33 @@
+
+.btn-cancel {
+    color: #fff !important;
+    background-color: #5b5563 !important;
+    font-size: 8pt !important;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #5b5563 !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.19);
+}
+.btn-add-cancel {
+    width: 60px !important;
+}
+
+.btn-cancel:hover {
+    color: #fff !important;
+    background-color: #696370 !important;
+    font-size: 8pt !important;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #696370 !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.19);
+}
+
+.btn-cancel:focus {
+    color: #fff !important;
+    background-color: #5b5563 !important;
+    font-size: 8pt !important;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #5b5563 !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.19);
+}
