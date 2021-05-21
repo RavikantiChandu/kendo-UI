@@ -2,8 +2,11 @@
   #diCustomGridColumn
   [field]="field"
   [title]="title"
-  [width]="width">
-  <ng-template kendoGridFilterMenuTemplate let-filter let-column="column" let-filterService="filterService">
+  [width]="width"
+  [filter]="filter"
+  [format]="format"
+  >
+  <!-- <ng-template kendoGridFilterMenuTemplate let-filter let-column="column" let-filterService="filterService">
     <kendo-grid-string-filter-menu
       [column]="column"
       [filter]="filter"
@@ -12,5 +15,5 @@
         <kendo-filter-eq-operator></kendo-filter-eq-operator>
     </kendo-grid-string-filter-menu>
   </ng-template>
-  <ng-content></ng-content>
+  <ng-content></ng-content> -->
 </kendo-grid-column>

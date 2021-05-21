@@ -6,18 +6,19 @@
   </div>  
 
   <di-custom-grid [gridData]="gridData" [height]="350"  [pageSize]=6 [pageable]=true [skip]="true" >
-
-    <di-custom-grid-column field="ProductID" title="ID" [width]="10">
+    <di-custom-grid-column field="ProductID" title="ID" [width]="10" filter="numeric" >
     </di-custom-grid-column>
-    <di-custom-grid-column field="ProductName" title="Name" [width]="25">
+    <di-custom-grid-column field="ProductName" title="Name" [width]="25" >
     </di-custom-grid-column>
-    <di-custom-grid-column field="Category.CategoryName" title="Category" [width]="20">
+    <di-custom-grid-column field="Category.CategoryName" title="Category" [width]="20" filter="date"
+    format="{0:d}"> 
     </di-custom-grid-column>
-    <di-custom-grid-column field="UnitPrice" title="Price" [width]="10" >
+    <di-custom-grid-column field="UnitPrice" title="Price" [width]="10"  filter="numeric"
+    format="{0:c}">
     </di-custom-grid-column>
     <di-custom-grid-column field="UnitsInStock" title="In stock" [width]="20">
     </di-custom-grid-column>
-    <di-custom-grid-column field="Discontinued" title="Discontinued"[width]="15" >
+    <di-custom-grid-column field="Discontinued" title="Discontinued"[width]="15" filter="boolean" >
         <ng-template kendoGridCellTemplate let-dataItem>
             <input type="checkbox" [checked]="dataItem.Discontinued" />
         </ng-template>
